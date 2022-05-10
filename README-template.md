@@ -26,7 +26,7 @@ This is a solution to the [Intro component with sign up form challenge on Fronte
 
 ### The challenge
 
-Users should be able to:
+Users should be able to
 
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
@@ -98,7 +98,6 @@ Use this section to outline areas that you want to continue focusing on in futur
 ## Author
 
 - Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@Risclover](https://www.frontendmentor.io/profile/Risclover)
 
 **Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
