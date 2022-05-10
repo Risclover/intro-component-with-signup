@@ -15,7 +15,13 @@ const passwordIcon = document.querySelector('.icon-password');
 const passwordError = document.getElementById('error-password');
 
 const submitBtn = document.getElementById('submit');
-submitBtn.addEventListener('click', formErrors);
+submitBtn.addEventListener('click', function() {
+    if(firstName.value === '' || lastName.value === '' || emailInput.value === '' || passwordInput.value === '' || !emailInput.validity.valid) {
+        formErrors();
+    } else {
+        window.location.reload();
+    }
+});
 
 firstName.addEventListener('keydown', function(){
     firstName.classList.remove('error');
@@ -50,16 +56,20 @@ emailInput.addEventListener('keydown', function() {
 })
 
 function formErrors() {
-    // If any are empty
-    // If email is formatted incorrectly
-
     // If 'First Name' is empty, throw error
     firstEmpty();
+
+    // If 'Last Name' is empty, throw error
     lastEmpty();
+
+    // If password is empty, throw error
     passwordEmpty();
+
+    // If email is empty or improperly formatted, throw error
     emailEmpty();
 }
 
+// First name is empty
 function firstEmpty() {
     if(firstName.value === '') {
         firstName.classList.add('error');
@@ -77,6 +87,7 @@ function firstEmpty() {
     }
 }
 
+// Last name is empty
 function lastEmpty() {
     if(lastName.value === '') {
         lastName.classList.add('error');
@@ -94,6 +105,7 @@ function lastEmpty() {
     }
 }
 
+// Password is empty
 function passwordEmpty() {
     if(passwordInput.value === '') {
         passwordInput.classList.add('error');
@@ -107,6 +119,7 @@ function passwordEmpty() {
     }
 }
 
+// Email is empty
 function emailEmpty() {
     if(emailInput.value === '' || !emailInput.validity.valid) {
         emailInput.classList.add('error');
