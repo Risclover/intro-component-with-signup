@@ -44,7 +44,7 @@ Users should be able to
 
 ### Links
 
-- [Solution URL](https://www.github.com/Risclover/intro-component-with-signup)
+- [Solution URL](https://www.frontendmentor.io/solutions/intro-component-with-signup-ByX7IUdLq)
 - [Live Site URL](https://risclover.github.io/intro-component-with-signup/)
 
 ## My process
