@@ -200,12 +200,14 @@ footer a {
 @media (min-width: 600px) {
     body {
         background-image: url('images/bg-intro-desktop.png');
+        background-size: contain;
     }
 }
 
 @media (min-width: 1000px) {
     body {
         background-image: url('images/bg-intro-desktop.png');
+        background-size: contain;
     }
 
     .content {
